@@ -16,4 +16,12 @@ class DefaultController extends Controller
     {
         return $this->render('default_pages/home.html.twig');
     }
+
+    /** @Route
+     * ("/presentation", name="introductionPage") 
+     */
+    public function introductionAction(Request $request)
+    {
+        return $this->render('default_pages/introduction.html.twig');
+    }
 }

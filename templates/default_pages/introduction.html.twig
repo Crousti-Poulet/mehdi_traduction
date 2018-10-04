@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} Accueil {% endblock %}
+
+{% block body %}
+
+    <main class="container-fluid" id="main_block">
+
+        <div class="container text-center" id="introduction_block"> 
+            <div class="row col-12">
+                <div class="col-6" id="bloc_picture">
+                    <img id="profil_picture" src="{{ asset('img/profil_picture.jpg') }}">
+                </div>
+
+                <div class="col-6" id="profil_text">
+                    <p>Issu d'un cursus en Langue Littérature et Civilisation étrangère spécialité Japonais,
+                    la langue et la culture japonaises font depuis longtemps partie intégrante de ma vie. 
+                    Mes trois années d'études au Japon n'ont fait que renforcer mon intérêt pour ce pays qui n'a de cesse de me fasciner. 
+                    Bien que je porte un intérêt tout particulier aux univers du web et du jeux vidéo, 
+                    je serai ravi de mettre mes compétences à votre disposition pour la traduction de tout type de texte ou de document audio/vidéo.</p>
+                </div>
+            </div> 
+        </div>
+
+    </main>
+
+{% endblock %}

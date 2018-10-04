@@ -11,6 +11,9 @@
         {# Personal stylesheet #}
         <link href="{{ asset('build/stylesheet/app.css') }}" rel="stylesheet">
 
+        {# Favicon #}
+        <link rel="icon" href="{{ asset('img/favicon.ico') }}">
+
         {% endblock %}
     </head>
 
@@ -34,7 +37,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Présentation</a>
+                            <a class="nav-link" href="{{ path('introductionPage') }}">Présentation</a>
                         </li>
 
                         <li class="nav-item dropdown">
