@@ -24,4 +24,12 @@ class DefaultController extends Controller
     {
         return $this->render('default_pages/introduction.html.twig');
     }
+
+     /** @Route
+     * ("/tarifs", name="pricesPage") 
+     */
+    public function pricesAction(Request $request)
+    {
+        return $this->render('default_pages/prices.html.twig');
+    }
 }

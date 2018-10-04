@@ -40,15 +40,8 @@
                             <a class="nav-link" href="{{ path('introductionPage') }}">Présentation</a>
                         </li>
 
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Tarifs
-                            </a>
-                            
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Particuliers</a>
-                                <a class="dropdown-item" href="#">Professionnels</a>
-                            </div>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ path('pricesPage') }}">Tarifs</a>
                         </li>
 
                         <li class="nav-item">
@@ -62,10 +55,10 @@
         {% block body %}{% endblock %}
 
         {# Footer #}
-        <footer class="footer fixed-bottom" id="footer">
+        <footer class="footer container-fluid fixed-bottom" id="footer">
             {# Copyright #}
-            <div class="footer-copyright text-center py-3">
-                <p>© 2018 Copyright El Ouni Mehdi</p>
+            <div class="text-center pt-3 col-12">
+                <p>© 2018 Copyright El Ouni Mehdi / <a href='https://fr.freepik.com/vecteurs-libre/oiseaux-origami-fond_766981.htm'>Background designed by Freepik</a></p>
             </div>
         </footer>
 
