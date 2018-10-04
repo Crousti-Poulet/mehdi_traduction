@@ -18,6 +18,7 @@ Encore
      * and one CSS file (e.g. app.css) if you JavaScript imports CSS.
      */
     .addStyleEntry('css/app', './assets/css/bootstrap-css/bootstrap.css')
+    .addStyleEntry('stylesheet/app', './assets/css/scss/style.scss')
     .addEntry('bootstrap-js/app', './assets/js/bootstrap-js/bootstrap.js')
     //.addEntry('page2', './assets/js/page2.js')
 
@@ -36,6 +37,7 @@ Encore
 
     // enables Sass/SCSS support
     //.enableSassLoader()
+    Encore.enableSassLoader()
 
     // uncomment if you use TypeScript
     //.enableTypeScriptLoader()
