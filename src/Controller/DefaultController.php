@@ -32,4 +32,20 @@ class DefaultController extends Controller
     {
         return $this->render('default_pages/prices.html.twig');
     }
+
+    /** @Route
+     * ("/tarifs-particuliers", name="personPricesPage") 
+     */
+    public function personPricesAction(Request $request)
+    {
+        return $this->render('default_pages/person_prices.html.twig');
+    }
+
+    /** @Route
+     * ("/tarifs-entreprises", name="businessPricesPage") 
+     */
+    public function businessPricesAction(Request $request)
+    {
+        return $this->render('default_pages/business_prices.html.twig');
+    }
 }

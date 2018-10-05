@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} Tarifs - Particuliers {% endblock %}
+
+{% block body %}
+
+    <main class="container-fluid" id="main_block">
+        <div class="container text-center" id="business_prices_block"> 
+            <div class="row">
+
+                <h2 class="col-12">Tarifs / Particuliers</h2>
+
+                <div class="col-12">
+                    <ul class="list-group pt-3 col-12"> 
+                        <li class="list-group-item list-group-item-danger mb-2 col-8 offset-2">À partir de 0,06 € le caractère (kanji et kana).
+                        Selon les cas, possibilité de forfait horaire ou journalier à raison de 15€/h.*</li>
+                        <li class="list-group-item list-group-item-secondary mt-2 mb-2 col-8 offset-2">Transcriptions : sur devis</li>
+                        <li class="list-group-item list-group-item-danger mt-2 mb-2 col-8 offset-2">Traduction de document audio/vidéo : sur devis</li>
+                        <li class="list-group-item list-group-item-secondary mt-2 mb-4 col-8 offset-2">Quoi qu'il en soit, n’hésitez pas à demander un devis gratuit !</li>
+                    </ul>
+
+                    <div class="col-12">
+                        <p class="col-12">*Ces tarifs sont donnés à titre indicatif et peuvent varier en fonction des exigences du travail.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+{% endblock %}
