@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Form\ContactType;
 use App\Controller\DefaultController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
@@ -54,6 +55,13 @@ class DefaultController extends Controller
      */
     public function contactAction(Request $request)
     {
-        return $this->render('default_pages/contact.html.twig');
+
+        $form = $this->createForm(ContactType::class);
+        
+        $form->handleRequest($request);
+
+        return $this->render('default_pages/contact.html.twig', [
+            'form'=> $form->createView()
+        ]);
     }
 }
