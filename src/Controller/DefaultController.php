@@ -48,4 +48,12 @@ class DefaultController extends Controller
     {
         return $this->render('default_pages/business_prices.html.twig');
     }
+
+    /** @Route
+     * ("/contact", name="contactPage") 
+     */
+    public function contactAction(Request $request)
+    {
+        return $this->render('default_pages/contact.html.twig');
+    }
 }
